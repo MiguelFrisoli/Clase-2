@@ -7,3 +7,10 @@ def tri_area(base, height):
 tri_area(7,9)
 
 
+"""Write a function that converts hours into seconds."""
+
+def how_many_seconds(hours):
+    h = int (hours * 3600)
+    return print(hours, "is equal to ", h, "seconds")
+
+how_many_seconds(2)
