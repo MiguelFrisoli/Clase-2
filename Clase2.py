@@ -36,3 +36,20 @@ def fizz_buzz(num):
 
 print (fizz_buzz(98))
 
+"""A graph is a set of nodes and edges that connect those nodes.
+
+Graph Example
+
+There are two types of graphs; directed and undirected. 
+In an undirected graph, the edges between nodes have no particular direction (like a two-way street) 
+whereas in a directed graph, each edge has a direction associated with it (like a one-way street).
+
+For two nodes in a graph to be considered adjacent to one another, there must be an edge between them. 
+In the example given above, nodes 0 and 1 are adjacent, but nodes 0 and 2 are not.
+
+We can encode graphs using an adjacency matrix. 
+An adjacency matrix for a graph with "n" nodes is an "n * n" matrix where the entry at row "i" and column "j" is a 0 
+if nodes "i" and "j" are not adjacent, and 1 if nodes "i" and "j" are adjacent."""
+
+def are_nodes_adjacent(matrix, node1, node2):
+    return matrix[node1][node2] == 1
